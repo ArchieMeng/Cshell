@@ -6,7 +6,6 @@
 #include "errors.h"
 #include "string.h"
 
-
 //Todo consider how to manage string in memory (GC)
 
 void    csm_open_string_literal()
@@ -29,6 +28,13 @@ void    csm_add_string_literal(char ch)
         block_size *= 2;
         string = realloc(string, block_size);
     }
+}
+
+
+//Todo finish string add and string GC
+char* csm_string_add(CSM_String *str1, CSM_String *str2)
+{
+    return NULL;
 }
 
 char* csm_close_string_literal()

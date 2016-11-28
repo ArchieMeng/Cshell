@@ -79,5 +79,6 @@ Expression* csm_create_identifier_expression(char *name);
 Expression* csm_create_binary_expression(Expression *left, ExpressionType operator, Expression *right);
 Expression* csm_create_function_call_expression(char *function_name, ParameterList *parameterList);
 Expression* csm_create_assign_expression(char *identifier,Expression *expression);
+Expression* csm_execute_expression(Expression *exp);
 
 #endif //CSHELL_EXPRESSION_H

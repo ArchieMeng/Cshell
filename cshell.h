@@ -4,6 +4,7 @@
 #include "CSM_dev.h"
 #include "expression.h"
 #include "string.h"
+#include "errors.h"
 
 typedef struct Variable_tag Variable;
 typedef struct FunctionDefinition_tag FunctionDefinition;
